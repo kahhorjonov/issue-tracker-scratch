@@ -36,7 +36,7 @@ export async function DELETE(
     where: { id: parseInt(params.id) },
   });
 
-  if (!issue) { 
+  if (!issue) {
     return NextResponse.json({ error: "Invalid issue" }, { status: 404 });
   }
 
